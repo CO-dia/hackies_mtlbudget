@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -16,7 +17,7 @@ const Home = () => {
                 </div>
                 <div className="absolute top-[612px] left-[515px] rounded-[100px] bg-goldenrod w-[410px] h-[159px] mix-blend-normal" />
                 <div className="absolute top-[654px] left-[565px] text-[60px] font-extrabold text-white">
-                    <button> TRY NOW !</button>
+                    <button> <Link to="/another">TRY NOW !</Link></button>
                 </div>
                 <img
                     className="absolute top-[612px] left-[115px] w-[327px] h-80 overflow-hidden object-cover"
