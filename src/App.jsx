@@ -1,4 +1,3 @@
-import { Route, Router, Routes } from 'react-router'
 import './App.css'
 import Home from './pages/Home.jsx'
 import InfoPage from './pages/InfoPage.jsx'
