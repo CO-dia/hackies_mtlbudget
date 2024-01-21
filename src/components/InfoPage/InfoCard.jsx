@@ -11,10 +11,10 @@ const InfoCard = ({
             <div className="bg-gray-500 bg-opacity-30">
                 <img src={imgPath}/>
             </div>
-            <div className="flex bg-gray-900 bg-opacity-80 text-white p-2">
-                <p className="w-2/3 text-center">{title}</p>
+            <div className="flex bg-gray-900 bg-opacity-80 p-2">
+                <p className="w-2/3 text-center text-white">{title}</p>
                 <input 
-                    type="text" 
+                    type="number" 
                     className="w-1/2 rounded" 
                     value={value}
                     onChange={onChange}

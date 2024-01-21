@@ -27,3 +27,9 @@ body {
     background-repeat:no-repeat;
     background-position: center center;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
