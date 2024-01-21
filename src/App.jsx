@@ -15,7 +15,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/info" element={<InfoPage />} />
                 <Route path="/budget" element={<BudgetPage />} />
-                <Route path="/roastme" element={<RoastAIPage />} />
+                <Route path="/buddyai" element={<RoastAIPage />} />
             </Routes>
         </Router>
     )
