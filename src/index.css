@@ -23,5 +23,7 @@ body {
 }
 
 body {
-    background-image: url("/public/rectangle@2x.png");
+    background-image: url("/rectangle@2x.png");
+    background-repeat:no-repeat;
+    background-position: center center;
 }

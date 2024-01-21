@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import { Route, Router, Routes } from 'react-router'
 import './App.css'
-import Home from './pages/Home'
-import InfoPage from './pages/InfoPage'
-import BudgetPage from './pages/BudgetPage'
-import RoastAIPage from './pages/RoastAIPage'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home.jsx'
+import InfoPage from './pages/InfoPage.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
     return (
-        <>
-            <Home />
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/info" element={<InfoPage />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
