@@ -7,13 +7,18 @@ const InfoCard = ({
     onChange
 }) => {
     return (
-        <div className="border border-gray-900 w-2/12">
+        <div className="border border-gray-900 w-5/12 mr-36">
             <div className="bg-gray-500 bg-opacity-30">
-                <img src="../../../public/fixed-asset@2x.png"/>
+                <img src={imgPath}/>
             </div>
-            <div className="flex bg-gray-900 bg-opacity-80 text-white p-2">
-                <p className="w-1/2 text-center">Income</p>
-                <input type="text" className="w-1/2 rounded"/>
+            <div className="flex bg-gray-900 bg-opacity-80 p-2">
+                <p className="w-2/3 text-center text-white">{title}</p>
+                <input 
+                    type="number" 
+                    className="w-1/2 rounded" 
+                    value={value}
+                    onChange={onChange}
+                />
             </div>
         </div>
     )
