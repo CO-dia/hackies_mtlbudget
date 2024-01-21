@@ -75,22 +75,21 @@ const RoastAIPage = () => {
     }, []);
 
     return (
-        <main className="h-screen w-full">
-            <div className="flex flex-col items-center justify-center h-full px-10">
-                <h1 className="text-4xl my-10 font-bold tracking-widest bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-600 text-transparent bg-clip-text">
-                    Finance Tips
+        <main className="h-[80vh] flex items-center justify-center">
+            <div className="w-full bg-white p-8  shadow-md">
+                <h1 className="text-5xl font-bold mb-6 text-center text-transparent bg-gradient-to-r from-green-700 via-white-500 from-green-700 bg-clip-text">
+                    Buddy AI
                 </h1>
                 <div className="relative">
                     <textarea
-                        className="absolute border border-purple-500 rounded-lg inset-0 bg-transparent z-0 text-black-500 w-[700px] p-4 outline-none "
+                        className="text-3xl w-full h-screen border border-green-500 rounded-lg p-4 outline-none text-lg"
                         value={userInput}
                         placeholder={suggestion ? suggestion : "Enter text"}
                         onChange={handleInputChange}
                         onKeyDown={handleTabKeyPress}
+                        autoFocus  // Autofocus to open the textarea by default
                     />
-                    <p className=" text-black-500 w-[700px] p-4 outline-none z-50">
-                        {suggestion}
-                    </p>
+                    <p className="text-black-500 text-3xl mt-4 text-lg">{suggestion}</p>
                 </div>
             </div>
         </main>
